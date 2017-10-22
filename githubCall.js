@@ -19,8 +19,8 @@ module.exports = async function(keyword, cache,rec) {
             "uri": url,
             "json": true,
             "headers": {
-                "Authorization": "Bearer " + '<OAUTH TOKEN>',
-                "User-Agent": "dependisearch"
+                "Authorization": "Bearer " + '6173372613e5f6a15c205f9a2cb3b399a5430538',
+                "User-Agent": "faizaanmadhani"
             }
         });
     }
@@ -36,6 +36,7 @@ module.exports = async function(keyword, cache,rec) {
             var search = await get("https://api.github.com/search/repositories?q=" + keyword + "+language:" + "Javascript" + "&page=" + pa);
         } catch (e) {
         }
+        if(!search.items)break;
         max = search.total_count;
         search = search.items;
         for (var i = 0; i < search.length; i++) {
@@ -80,6 +81,7 @@ module.exports = async function(keyword, cache,rec) {
         } catch (e) {
             break;
         }
+        if(!search.items)break;
         max = search.total_count;
         search = search.items;
         //console.log(search)
