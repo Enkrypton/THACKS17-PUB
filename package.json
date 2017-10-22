@@ -1,0 +1,28 @@
+{
+  "name": "thacks17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omegalink12/THACKS17.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omegalink12/THACKS17/issues"
+  },
+  "homepage": "https://github.com/omegalink12/THACKS17#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "keyword-extractor": "0.0.14",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "engines": {
+    "node": "8.7.0"
+  }
+}
