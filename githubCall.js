@@ -29,7 +29,7 @@ module.exports = async function(keyword, cache,rec) {
     var v = {};
     var max = Infinity,
         sample = 0,
-        pa = 0;
+        pa = 1;
     var cons=100,x=0
     while (x < cons && x < max&& cons<=max) {
         try {
@@ -71,7 +71,7 @@ module.exports = async function(keyword, cache,rec) {
         }
         pa++;
     }
-    pa = 0;
+    pa = 1;
     x=0;
     max = Infinity;
     while (x < cons && x < max&&cons<=max) {
